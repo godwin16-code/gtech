@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #FD6F00;
+    --secondary-color: #1E1E1E;
+    --accent-color1: #9E9E9E;
+    --accent-color2: #FFFFFF;
+    --background-color1: #121212;
+    --background-color2: #000000;
+    --heading-font: 'Poppins';
+    --body-font: 'Roboto';
+    --body-font1: 'Inter';
+}
+
+@media (min-width: 650px) {
+
+    header .desktop{
+        margin: 24px 60px;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-mobile ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .nav-mobile ul li a{
+        color: #fff;
+        font-family: 'Inter';
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+
+    .nav-mobile ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    .cta-mobile button {
+        width: 90px;
+        height: 40px;
+    }
+}

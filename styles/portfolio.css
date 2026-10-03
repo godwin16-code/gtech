@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #FD6F00;
+    --secondary-color: #1E1E1E;
+    --accent-color1: #9E9E9E;
+    --accent-color2: #FFFFFF;
+    --background-color1: #121212;
+    --background-color2: #000000;
+    --heading-font: 'Poppins';
+    --body-font: 'Roboto';
+    --body-font1: 'Inter';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color2);
+    line-height: 1.9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+main {
+    padding-top: 90px;
+}
+
+header .header-mobile {
+    margin: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cta-mobile {
+    display: flex;
+    gap: 14px;
+}
+
+.cta-mobile .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color1);
+    cursor: pointer;
+    border: var(--primary-color) 1px solid;
+}
+
+.cta-mobile .profile-icon img{
+    display: block;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.cta-mobile button{
+    background: var(--primary-color);
+    width: 85px;
+    height: 35px;
+    border: #f9c49b thin solid;
+    border-radius: 8px;
+    color: var(--accent-color2);
+    font-family: var(--body-font1);
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.cta-mobile button:hover {
+    transform: scale(1.05);
+    transform: translateY(-5%);
+    background: var(--secondary-color);
+}
+
+.inner-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    color: var(--accent-color1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 22%;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    word-spacing: 1px;
+}
+
+.headline span {
+    font-size: 24px;
+}
+
+.sub-headline {
+    position: absolute;
+    color: var(--primary-color);
+    display: flex;
+    top: 39%;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: var(--heading-font);
+}
