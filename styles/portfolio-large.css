@@ -44,4 +44,74 @@
         width: 90px;
         height: 40px;
     }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+    }
+
+    .hero-image-backdrop {
+        margin-top: 5%;
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .hero-img {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 70%;
+    }
+
+    .hero-img img {
+        width: 400px;
+    }
+
+    .inner-hero {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 24px 0 0 clamp(24px, 5vw, 60px);
+    }
+
+    .headline {
+        top: calc(8% + 24px);
+        align-items: flex-start;
+        text-align: left;
+        font-size: 28px;
+        line-height: 1.6;
+    }
+
+    .headline span {
+        font-size: 32px;
+    }
+
+    .sub-headline {
+        top: calc(23% + 24px);
+        align-items: flex-start;
+        text-align: left;
+        font-size: 38px;
+        padding-top: 14px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .social-links-row {
+        top: calc(38% + 24px);
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .cta-btn {
+        top: calc(52% + 24px);
+    }
+
+    .experience {
+        top: calc(65% + 24px);
+        justify-content: flex-start;
+        position: absolute;
+        width: 500px;
+    }
 }

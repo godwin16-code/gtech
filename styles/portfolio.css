@@ -308,20 +308,28 @@ header .header-mobile {
 .hero-img {
     justify-content: center;
     position: relative;
+    top: 290px;
 }
 
 .hero-img .hero-image-backdrop {
     background: var(--secondary-color);
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     position: absolute;
-    top: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
-    border-radius: 100% 200%;
+    border-radius: 50%;
 }
 
 .hero-img .inner-hero-image {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
